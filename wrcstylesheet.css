@@ -1,0 +1,54 @@
+body {
+	background-color: #f0ffff;
+}
+.navbar .navbar-nav .nav-link {
+	color: #002435;
+	font-size: 1.2em;
+}
+.navbar .navbar-nav .nav-link:hover {
+	color: #108386;
+}
+h1 {
+	word-spacing: 5pt;
+	letter-spacing: 1pt;
+	background-color: #daa520;
+	color: #ffe4b5;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 42pt;
+}
+h3,
+p {
+	line-height: 30pt;
+	background-color: #ffefd5;
+	color: #556b2f;
+	font-family: 'Rubik', sans-serif;
+}
+header {
+	border: 2pt solid #556b2f;
+	background-color: #ffefd5;
+	padding: 10pt 50pt 20pt;
+	text-align: center;
+}
+form {
+	padding: 20pt;
+	text-align: center;
+	background-color: mintcream;
+	border: 2pt solid #556b2f;
+	border-top-width: 0;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 14pt;
+}
+#submit {
+	font-size: 1.5em;
+	color: cornsilk;
+	margin: 25pt;
+	border-radius: 15pt;
+}
+#logo {
+	text-align: center;
+	opacity: 0.33;
+}
+#image {
+	border: 2pt solid #556b2f;
+	border-top-width: 0;
+}
