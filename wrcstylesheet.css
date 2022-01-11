@@ -4,19 +4,19 @@ body {
 .navbar .navbar-nav .nav-link {
 	color: #002435;
 	font-size: 1.2em;
-	transition: font-size 0.25s color 0.1s box-shadow 0.2s;
+	transition: all 0.25s;
 }
 .navbar .navbar-nav .nav-link:hover {
 	color: #c79c28;
 	font-size: 1.3em;
-	box-shadow: -0.4em 0.5em 0.5em -0.4em #70510e;
-	transform: skew(10deg);
+	box-shadow: -0.4em 0.5em 0.5em -0.2em #70510e;
+	transform: skew(10deg) translateY(-0.1em);
 }
 .navbar-brand {
 	transition: all 0.25s;
 }
 .navbar-brand:hover {
-	box-shadow: -0.6em 0.6em 0.6em -0.4em #679ea1;
+	box-shadow: -0.6em 0.7em 0.7em -0.2em #29475f;
 	transform: translateY(-0.1em) skew(10deg);
 	cursor: pointer;
 }
