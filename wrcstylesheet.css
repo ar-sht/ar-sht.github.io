@@ -4,10 +4,23 @@ body {
 .navbar .navbar-nav .nav-link {
 	color: #002435;
 	font-size: 1.2em;
+	transition: font-size 0.25s color 0.1s box-shadow 0.2s;
 }
 .navbar .navbar-nav .nav-link:hover {
-	color: #108386;
+	color: #c79c28;
+	font-size: 1.3em;
+	box-shadow: -0.4em 0.5em 0.5em -0.4em #70510e;
+	transform: skew(10deg);
 }
+.navbar-brand {
+	transition: all 0.25s;
+}
+.navbar-brand:hover {
+	box-shadow: -0.6em 0.6em 0.6em -0.4em #679ea1;
+	transform: translateY(-0.1em) skew(10deg);
+	cursor: pointer;
+}
+
 h1 {
 	word-spacing: 5pt;
 	letter-spacing: 1pt;
@@ -15,6 +28,10 @@ h1 {
 	color: #ffe4b5;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 42pt;
+	padding: 25px;
+	border: 2pt solid #556b2f;
+	border-left: none;
+	border-right: none;
 }
 h3,
 p {
@@ -24,31 +41,57 @@ p {
 	font-family: 'Rubik', sans-serif;
 }
 header {
-	border: 2pt solid #556b2f;
+	border-bottom: 2pt dotted #556b2f;
 	background-color: #ffefd5;
-	padding: 10pt 50pt 20pt;
+	margin: 0 20px;
 	text-align: center;
+	border-left: 1pt solid #556b2f;
+	border-right: 1pt solid #556b2f;
 }
 form {
-	padding: 20pt;
+	margin: 10px 20px;
+	padding-top: 10px;
 	text-align: center;
 	background-color: mintcream;
-	border: 2pt solid #556b2f;
-	border-top-width: 0;
 	font-family: 'Maven Pro', sans-serif;
-	font-size: 14pt;
+	font-size: 1.3em;
 }
-#submit {
-	font-size: 1.5em;
-	color: cornsilk;
-	margin: 25pt;
-	border-radius: 15pt;
+.submit-btn {
+	border-radius: 1.2em;
+	background-color: #307081;
+	color: #bbe4a8;
+	padding: 0.8em 1.6em;
+	font-size: 1.3em;
+	transition: all 0.25s;
+	margin-top: 40px;
 }
-#logo {
-	text-align: center;
-	opacity: 0.33;
+.submit-btn:hover {
+	border-color: #0e5350;
+	color: rgb(255, 255, 255);
+	box-shadow: 0 0.5em 0.5em -0.4em #0e5350;
+	transform: translateY(-0.25em);
+	cursor: pointer;
+	margin-top: 40px;
 }
-#image {
-	border: 2pt solid #556b2f;
-	border-top-width: 0;
+.email {
+	text-decoration: none;
+	color: #2c5e42;
+}
+.email a {
+	color: #2c5e42;
+	transition: color 0.2s;
+}
+.email a:hover {
+	color: #233823;
+}
+
+select:hover, input#use:hover {
+	cursor: pointer;
+}
+label {
+	font-size: 1.2em;
+}
+form section {
+	padding: 10px;
+	border-bottom: 0.3px #002435 dotted;
 }
