@@ -9,15 +9,15 @@ body {
 .navbar .navbar-nav .nav-link:hover {
 	color: #c79c28;
 	font-size: 1.3em;
-	box-shadow: -0.4em 0.5em 0.5em -0.2em #7e5e1a;
 	transform: skew(10deg) translateY(-0.1em);
+	box-shadow: -0.4em 0.5em 0.5em -0.2em #7e5e1a;
 }
 .navbar-brand {
 	transition: all 0.25s;
 }
 .navbar-brand:hover {
-	box-shadow: 0 0.7em 0.7em -0.2em #2f526e;
 	transform: translateY(-0.2em);
+	box-shadow: 0 0.7em 0.7em -0.2em #2f526e;
 	cursor: pointer;
 }
 
