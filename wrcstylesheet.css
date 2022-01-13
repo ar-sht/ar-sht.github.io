@@ -106,9 +106,6 @@ section.use {
 		font-size: 1em;
 	}
 	form {
-		font-size: 1.2em;
-	}
-	section.use {
 		font-size: 0.8em;
 	}
 }
@@ -125,9 +122,6 @@ section.use {
 		font-size: 0.8em;
 	}
 	form {
-		font-size: 1em;
-	}
-	section.use {
-		font-size: 0.7em;
+		font-size: 0.6em;
 	}
 }
