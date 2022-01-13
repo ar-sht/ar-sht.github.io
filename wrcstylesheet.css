@@ -47,12 +47,22 @@ header {
 	border-right: 1pt solid #556b2f;
 }
 form {
-	margin: 10px 20px;
-	padding-top: 10px;
+	margin: 3% 5%;
+	padding-top: 2%;
 	text-align: center;
-	background-color: mintcream;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: 'Trebuchet MS', sans-serif;
 	font-size: 1.3em;
+}
+
+select:hover {
+	cursor: pointer;
+}
+form section {
+	padding: 4%;
+	border-bottom: 0.3px #002435 dotted;
+}
+section.use {
+	font-size: 1em;
 }
 .submit-btn {
 	border-radius: 1.2em;
@@ -83,17 +93,6 @@ form {
 	color: #233823;
 }
 
-select:hover {
-	cursor: pointer;
-}
-label {
-	font-size: 1.2em;
-}
-form section {
-	padding: 10px;
-	border-bottom: 0.3px #002435 dotted;
-}
-
 @media (max-width: 768px) {
 	h1 {
 		font-size: 3em;
@@ -101,7 +100,16 @@ form section {
 	}
 	h3 {
 		font-size: 1.5em;
-		color: #886b2d
+		color: #886b2d;
+	}
+	.navbar .navbar-nav .nav-link {
+		font-size: 1em;
+	}
+	form {
+		font-size: 1.2em;
+	}
+	section.use {
+		font-size: 0.8em;
 	}
 }
 @media (max-width: 576px) {
@@ -111,6 +119,15 @@ form section {
 	}
 	h3 {
 		font-size: 1em;
-		color: #5f1d0d
+		color: #5f1d0d;
+	}
+	.navbar .navbar-nav .nav-link {
+		font-size: 0.8em;
+	}
+	form {
+		font-size: 1em;
+	}
+	section.use {
+		font-size: 0.7em;
 	}
 }
