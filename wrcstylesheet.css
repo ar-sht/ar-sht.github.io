@@ -12,16 +12,16 @@ body {
 	transition: all 0.25s;
 }
 .navbar-brand:hover {
-	transform: rotate(-5deg)
+	transform: rotate(-5deg);
 }
 
 h1 {
-	word-spacing: 5pt;
-	letter-spacing: 1pt;
+	word-spacing: 20%;
+	letter-spacing: 20%;
 	background-color: #daa520;
 	color: #ffe4b5;
 	font-family: 'Roboto Mono', monospace;
-	font-size: 42pt;
+	font-size: 4em;
 	padding: 25px;
 	border: 2pt solid #556b2f;
 	border-left: none;
@@ -29,10 +29,14 @@ h1 {
 }
 h3,
 p {
-	line-height: 30pt;
+	line-height: 150%;
 	background-color: #ffefd5;
 	color: #556b2f;
 	font-family: 'Rubik', sans-serif;
+}
+h3 {
+	font-size: 2em;
+	padding: 0 3%;
 }
 header {
 	border-bottom: 2pt dotted #556b2f;
@@ -79,7 +83,7 @@ form {
 	color: #233823;
 }
 
-select:hover, input#use:hover {
+select:hover {
 	cursor: pointer;
 }
 label {
@@ -88,4 +92,25 @@ label {
 form section {
 	padding: 10px;
 	border-bottom: 0.3px #002435 dotted;
+}
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 3em;
+		background-color: #b8913d;
+	}
+	h3 {
+		font-size: 1.5em;
+		color: #886b2d
+	}
+}
+@media (max-width: 576px) {
+	h1 {
+		font-size: 2em;
+		background-color: #5f1d0d;
+	}
+	h3 {
+		font-size: 1em;
+		color: #5f1d0d
+	}
 }
