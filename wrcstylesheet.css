@@ -1,66 +1,42 @@
 body {
 	background-color: #f0ffff;
 }
-nav ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-	margin-bottom: none;
+nav.navbar {
+	background-color: #1c4370;
 }
-nav li {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	margin: 0 2%;
-	font-size: 1.2em;
+.navbar-toggler {
+	color: #ffffff;
 }
-ul li a {
-	text-decoration: none;
-	color: #3a6070;
+.navbar-nav {
+	font-size: 1.9em;
+}
+.navbar .navbar-nav a.nav-link {
 	font-family: 'Lora', sans-serif;
-	font-weight: 600;
 	text-transform: uppercase;
-	transition: all 0.2s;
+	margin: 5px 25px;
 }
-ul li a:hover {
-	color: #0a2430;
-	border-bottom: 4px solid #0a2430;
+.navbar-brand {
+	margin: 5px 25px
 }
-.navbar-brand:hover {
-	transform: rotate(-5deg);
-}
-nav {
-	margin: none;
-}
-
 h1 {
-	word-spacing: 0.1em;
-	letter-spacing: 0.05em;
+	letter-spacing: 5px !important;
 	background-color: #daa520;
 	color: #ffe4b5;
-	font-family: 'Lora', sans-serif;
-	font-size: 4em;
+	font-family: 'Trebuchet MS', monospace;
+	font-size: 4em !important;
 	padding: 3% 3%;
-	border: 2pt solid #556b2f;
-	border-left: none;
-	border-right: none;
-	font-weight: normal;
+	border-top: 2px solid #556b2f;
+	border-bottom: 2px solid #556b2f;
+	font-weight: bolder !important;
 }
-input[type="number"] {
-	width: 25%;
-	font-size: 1em;
-}
-h3,
-p {
-	line-height: 150%;
+h3 {
+	line-height: 1.5 !important;
 	background-color: #ffefd5;
 	color: #556b2f;
 	font-family: 'Rubik', sans-serif;
-}
-h3 {
-	font-size: 2em;
+	font-size: 2em !important;
 	padding: 0 3%;
-	font-weight: normal;
+	font-weight: normal !important;
 }
 header {
 	border-bottom: 2pt dotted #556b2f;
@@ -69,6 +45,7 @@ header {
 	text-align: center;
 	border-left: 1pt solid #556b2f;
 	border-right: 1pt solid #556b2f;
+	margin-top: 100px;
 }
 form {
 	margin: 3% 5%;
@@ -78,16 +55,19 @@ form {
 	font-size: 1.4em;
 }
 select {
-	width: auto;
-	height: auto;
-	font-size: 1em;
+	width: 60%;
 }
 select:hover {
 	cursor: pointer;
+	border: 1px solid blue;
 }
 form section {
 	padding: 1%;
 	border-bottom: 0.3px #002435 dotted;
+}
+input[type="number"] {
+	width: 25%;
+	font-size: 1em;
 }
 form input:invalid {
 	padding: 1%;
@@ -148,49 +128,19 @@ input#use:hover {
 	color: initial;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 	h1 {
-		font-size: 3em;
-		background-color: #b8913d;
+		font-size: 3em !important;
 	}
 	h3 {
-		font-size: 1.5em;
-		color: #886b2d;
-	}
-	nav li {
-		font-size: 1.1em;
-		padding: 0.2%;
-	}
-	form {
-		font-size: 1em;
+		font-size: 1.5em !important;
 	}
 }
-@media (max-width: 576px) {
+@media (max-width: 546px) {
 	h1 {
-		font-size: 2em;
-		background-color: #5f1d0d;
+		font-size: 2em !important;
 	}
 	h3 {
-		font-size: 1em;
-		color: #5f1d0d;
-	}
-	nav li {
-		font-size: 1em;
-		padding: 0.5%;
-	}
-	form {
-		font-size: 0.8em;
-	}
-	nav ul {
-		flex-direction: column;
-		width: auto;
-	}
-	ul li a:hover {
-		text-decoration: underline;
-		text-underline-offset: 2px;
-		border: none;
-	}
-	.navbar-brand:hover {
-		transform: skew(5deg);
+		font-size: 1em !important;
 	}
 }
